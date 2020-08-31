@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Hello World"
-                echo "Multiline shell steps works too"
-                echo "thank you so much!"
+                bat label: '', script: 'echo "Hello world"'
             }
         }
     }
